@@ -5,7 +5,7 @@ st.title('Luces inteligentes con MQTT')
 
 st.header("Este es uno de los usos que se le puede dar al protocolo MQTT")
 
-image = Image.open('broccoli-8174625.jpg')
+image = Image.open('CasaInteligente.jpg')
 
 st.image(image, caption= 'Casa int')
 
