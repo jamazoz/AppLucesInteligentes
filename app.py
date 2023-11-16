@@ -49,8 +49,8 @@ with col1:
   if st.button('Presiona el Botón'):
     client1.on_publish = on_publish                            
     client1.connect(broker,port)  
-    message = "ON"
-    ret= client1.publish("voice_ctrl", message)  
+    mensaje= "ON"
+    ret= client1.publish("luzenvio", mensaje)  
     st.write('Gracias por presionar')
 
 with col2:
