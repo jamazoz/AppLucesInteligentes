@@ -50,7 +50,7 @@ with col1:
     client1.on_publish = on_publish                            
     client1.connect(broker,port)  
     mensaje= "ON"
-    ret= client1.publish("luzenvio", mensaje)  
+    ret= client1.publish("luzcasa", mensaje)  
     st.write('Gracias por presionar')
 
 with col2:
@@ -59,7 +59,7 @@ with col2:
     client1.on_publish = on_publish                            
     client1.connect(broker,port)  
     mensaje= "OFF"
-    ret= client1.publish("luzenvio", mensaje)
+    ret= client1.publish("luzcasa", mensaje)
     st.write('Gracias por presionar')
 
 #Codigo copiado rec. texto 
