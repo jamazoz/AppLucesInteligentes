@@ -56,6 +56,10 @@ with col1:
 with col2:
   st.subheader("Apagar las luces")
   if st.button('Presiona el Botón para apagar'):
+    client1.on_publish = on_publish                            
+    client1.connect(broker,port)  
+    mensaje= "OFF"
+    ret= client1.publish("luzenvio", mensaje)
     st.write('Gracias por presionar')
 
 #Codigo copiado rec. texto 
