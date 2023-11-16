@@ -47,6 +47,10 @@ col1, col2 = st.columns(2)
 with col1:
   st.subheader("Encender las luces")
   if st.button('Presiona el Botón'):
+    client1.on_publish = on_publish                            
+    client1.connect(broker,port)  
+    message = "ON"
+    ret= client1.publish("voice_ctrl", message)  
     st.write('Gracias por presionar')
 
 with col2:
