@@ -1,5 +1,15 @@
 import streamlit as st
+import paho.mqtt.client as mqtt
+from time import sleep
 from PIL import Image
+
+#MQTT Config
+MQTT_BROKER = os.getenv("broker.mqttdashboard.com")
+MQTT_PORT = int(os.getenv("1883"))
+MQTT_TOPIC = "luzenvio"
+MQTT_USER = os.getenv("")
+MQTT_PW = os.getenv("")
+
 
 st.title('Luces inteligentes con MQTT')
 
