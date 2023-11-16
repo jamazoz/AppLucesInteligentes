@@ -24,8 +24,8 @@ def on_message(client, userdata, message):
 
 
 #MQTT Config
-MQTT_BROKER = "broker.mqttdashboard.com"
-MQTT_PORT = 1883
+broker = "broker.mqttdashboard.com"
+port = 1883
 MQTT_TOPIC = "luzenvio"
 
 client1= paho.Client("GIT-HUB")
