@@ -20,7 +20,7 @@ with col1:
 
 with col2:
   st.subheader("Apagar las luces")
-  if st.button('Presiona el Botón'):
+  if st.button('Presiona el Botón para apagar'):
     st.write('Gracias por presionar')
 
 st.write('Hecho por Julian Andres Mazo')
